@@ -1,5 +1,7 @@
 package com.distribuida;
 
+import com.distribuida.model.Autor;
+import com.distribuida.model.Categoria;
 import com.distribuida.model.Cliente;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,6 +25,24 @@ public class LibreriaApplication {
 				,"Quito"
 				,"0983456256"
 				,"abrito@correo.com"
+
+		);
+
+		Autor autor = new Autor(
+				1
+				,"Carlos"
+				,"Román"
+				,"Chile"
+				,"Santiago"
+				,"0983456256"
+				,"romantico@correo.com"
+
+		);
+
+		Categoria categoria = new Categoria(
+				1
+				,"Drama"
+				,"Esencia y suspenso"
 
 		);
 
