@@ -38,7 +38,7 @@ public class ClienteTest {
             () -> assertEquals("besponja@correo.com",cliente.getCorreo())
         );
 
-        System.out.println("Test unitarias enb cliente");
+        System.out.println("Test unitarias en cliente");
         System.out.println(cliente.toString());
 
     }
