@@ -51,7 +51,7 @@ public class ClienteTestIntegracion {
                 , "Av. por ahi.","0998789713", "jtapia6@correo.com");
         Cliente clienteGuardado = clienteDAO.save(cliente);
         assertNotNull(clienteGuardado.getIdCliente(),"El cliente guardado debe tener un id.");
-        assertEquals("1701234566",clienteGuardado.getCedula());
+        assertEquals("1789987524",clienteGuardado.getCedula());
         assertEquals("Juan6",clienteGuardado.getNombre());
 
     }
@@ -59,7 +59,7 @@ public class ClienteTestIntegracion {
     @Test
     public void update(){
 
-        Optional<Cliente> cliente = clienteDAO.findById(44);
+        Optional<Cliente> cliente = clienteDAO.findById(47);
         assertTrue(cliente.isPresent(),"El cliente con id = 44 debe de existir para ser actualizado");
 
         cliente.orElse(null).setCedula("1701233334");
@@ -78,10 +78,10 @@ public class ClienteTestIntegracion {
 
     @Test
     public void delete(){
-        if(clienteDAO.existsById(44)){
-            clienteDAO.deleteById(44);
+        if(clienteDAO.existsById(46)){
+            clienteDAO.deleteById(46);
         }
-        assertFalse(clienteDAO.existsById(44),"El id = 44 deberia haberse eliminado");
+        assertFalse(clienteDAO.existsById(46),"El id = 44 deberia haberse eliminado");
 
     }
 
